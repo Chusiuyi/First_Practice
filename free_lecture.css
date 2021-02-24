@@ -1,0 +1,157 @@
+@import "./header.css";
+@import "./footer.css";
+
+main.main {
+  width: 100%;
+}
+header.header nav.nav ul.link_list > li:nth-child(3){
+  border-bottom: 3px solid #44a798a9;
+}
+main.main p.lecture_title {
+  font-size: 2.5rem;
+  color: #2B5F75;
+  text-align: center;
+  letter-spacing: 20px;
+  line-height: 100px;
+  border-bottom: 1px solid #658390;
+  margin-bottom: 50px;
+}
+
+main.main div.lecture_container1 {
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+  margin: 0 auto;
+  /* margin-bottom: 50px; */
+}
+
+@media screen and (max-width: 999px){
+  main.main div.lecture_container1{
+    width: 800px;
+  }
+}
+@media screen and (max-width: 830px){
+  main.main div.lecture_container1{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.lecture_container1 img.main_image{
+  }
+
+  main.main p.lecture_title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 500px){
+  main.main div.lecture_container1{
+    width: 100%;
+  }
+}
+
+main.main div.lecture_container1 img.main_image{
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+div.wine_lecture_block {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div.bolivia_lecture_block {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+div.lecture_topic, .lecture_date, .lecture_location {
+  margin-bottom: 5px;
+}
+
+div.lecture_container1 p {
+  display: inline-block;
+  vertical-align: top;
+  color: #658390;
+}
+
+div.button {
+  margin-top: 30px;
+  text-align: center;
+}
+
+div.button a {
+    border: 0;
+    border-radius: 40px;
+    text-align: center;
+    letter-spacing: 6px;
+    padding: 10px 10px 10px 15px;
+    color: white;
+    background-color: #3b4f0d;
+}
+
+div.button a:hover {
+    color: white;
+    background-color: #969696;
+    transition: 0.6s;
+}
+
+div.faq_container{
+  width: 900px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+h2.title{
+  text-align: center;
+  margin-bottom: 30px;
+  color: #24556a;
+}
+ul.faq_list li{
+  margin-bottom: 20px;
+  color: #8a8888;
+  background-color: #9bc1c44f;
+  padding: 5px 0;
+  text-align: center;
+}
+
+div.faq_title1, .faq_title2, .faq_title3{
+  text-align: center;
+  font-size: 18px;
+  padding: 15px 0;
+  color: #4b4949;
+  cursor: pointer;
+  display: block;
+}
+
+div.faq_title1::after, .faq_title2::after, .faq_title3::after {
+
+  content: "";
+  border: solid #686565;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 4px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  margin-bottom: 3px;
+
+}
+
+
+div.faq_answer1, .faq_answer2, .faq_answer3{
+  text-align: center;
+  display: none;
+}
+
+@media screen and (max-width:900px){
+
+  div.faq_container{
+    width: 100%; 
+    padding: 0 15px;
+  }
+}

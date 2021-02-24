@@ -1,0 +1,90 @@
+@import "./header.css";
+@import "./footer.css";
+
+div.contact_us_container {
+  width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  text-align: left;
+}
+
+header.header nav.nav ul.link_list > li:nth-child(4){
+  border-bottom: 3px solid #44a798a9;
+}
+
+@media screen and (max-width: 950px){
+  div.contact_us_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+div.contact_us_container form.the_form>p {
+  font-size: 1.2rem;
+  color: #0c6495;
+  letter-spacing: 3px;
+  padding-bottom: 30px;
+}
+
+form.the_form div.item_block {
+  margin-bottom: 30px;
+}
+
+div.item_block>label {
+  font-size: 1rem;
+}
+
+div.item_block>input {
+  height: 34px;
+  width: 240px;
+  padding: 10px;
+}
+
+div.item_block textarea.message {
+  height: 120px;
+  width: 240px;
+  resize: vertical;
+}
+
+div.item_block button.btn_submit {
+  font-size: 1rem;
+  background-color: #2e6fa3;
+  color: white;
+  padding: 5px 15px;
+  border: 0;
+  cursor: pointer;
+}
+
+div.line_block {
+  text-align: center;
+}
+
+div.line_block>p {
+  font-size: 1.2rem;
+  color: #0c6495;
+}
+
+div.Line_QRcode_block {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+div.Line_QRcode_block>img {
+  padding: 30px 0px 30px 0px;
+}
+
+div.google_map_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 80px 0px 80px 0px;
+}
+
+

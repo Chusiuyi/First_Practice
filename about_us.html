@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>關於我們</title>
+  <link href="./about_us.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="parent_block">
+      <a href="./index.html" class="logo_img"><img src="./images/logo.svg"></a>
+      <button class="hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box"></span>
+        <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <nav class="nav">
+        <ul class="link_list">
+          <li><a href="./about_us.html">關於我們</a></li>
+          <li><a href="./all_itineraries.html">行程一覽</a></li>
+          <li>
+            <div class="aboutLatin_block">
+              認識拉丁美洲
+              <ul class="aboutLatin_list">
+                <li><a href="./civilization.html">最新文章</a></li>
+                <li><a href="./free_lecture.html">免費講座</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./contact_us.html">聯絡我們</a></li>
+        </ul>
+      </nav>
+      <div class="nav_icon">
+        <div class="IG">
+          <a href="#" class="IG"><img src="./images/Icon-instagram.svg"></a>
+        </div>
+        <div class="FB">
+          <a href="#" class="IG"><img src="./images/Icon-facebook.svg"></a>
+        </div>
+        <div class="LINE">
+          <a href="#" class="IG"><img src="./images/Icon-line.svg"></a>
+        </div>
+
+
+      </div>
+    </div>
+
+  </header>
+
+
+  <nav class="hamburger_nav">
+    <ul class="hamburger_link_list">
+      <li><a href="./about_us.html">關於我們</a></li>
+      <li><a href="./all_itineraries.html">行程一覽</a></li>
+      <li><a href="./civilization.html">最新文章</a></li>
+      <li><a href="./free_lecture.html">免費講座</a></li>
+      <li><a href="./contact_us.html">聯絡我們</a></li>
+    </ul>
+  </nav>
+
+
+  <p class="main_title">關於我們</p>
+  <div class="aboutus_container">
+    
+    <div class="main_image">
+      <img src="./images/chile-caves.jpg" alt="">
+    </div>
+    <div class="aboutus_content">
+      <p class="who_are_we">解鎖拉丁美洲是誰？</p>
+      <p class="aboutus_text">
+        我們想要嘗試一種新型態的旅行方式，可以解決傳統跟團的制式、不自由、無法自在玩樂；
+        同時也免除獨自旅行的麻煩、費時和寂寞。在小團體的旅行中，保有最大限度的自由，也透過精心設計的行程活動，
+        讓參與的旅人能在有限的時間內，體驗到最在地的生活樣貌。
+        解鎖拉美已帶領超過1500位旅人探索拉丁美洲，足跡遍佈智利、秘魯、墨西哥等地。
+        同時間也嘗試各種不同類型的旅行方式，讓旅行有更多無限的可能！
+      </p>
+    </div>
+  </div>
+  <p class="guarantee_title">解鎖拉丁美洲三大保證</p>
+  <div class="guarantee_container">
+    <div class="guarantee_block">
+      <img src="./images/shield.svg" alt="">
+      <p class="icon_name">安全第一</p>
+      <p class="guarantee_content">所有的行程內容都會以安全為最優先考量。
+        例如，各團將包含從機場接機與送機的服務。另外，我們也特別聘請當地專業的嚮導與司機，
+        用最安全的方式探索！</p>
+    </div>
+    <div class="guarantee_block">
+      <img src="./images/backpack.svg" alt="">
+      <p class="icon_name">背包踩點</p>
+      <p class="guarantee_content">為了呈現最棒的旅行給冒險旅人們，所有的行程和路線，
+        我們都有事先以背包客的方式親自體驗過，只有我們認為最值得、最深度的體驗才會放進行程。</p>
+
+
+    </div>
+    <div class="guarantee_block">
+      <img src="./images/help.svg" alt="">
+      <p class="icon_name">只有旅行</p>
+      <p class="guarantee_content">解鎖拉美為了創造全新的旅行體驗，屏除了傳統旅行社會有的小費、隱藏付費行程與強制消費等文化。</p>
+
+    </div>
+
+  </div>
+
+  <footer class="footer">
+
+    <div class="info_block">
+      <p class="company_name">解鎖拉丁美洲<br><br></p>
+      <p class="address">電話 | 03-330-1234<br>地址｜桃園市桃園區中正路666號<br>信箱｜unlockline@gmail.com</p>
+    </div>
+    <div class="copy">&copy; 2020 Unlock Latin America Travel Taiwan</div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+
+      $("button.hamburger").on("click", function () {
+        $("nav.hamburger_nav").slideToggle();
+      });
+
+    });
+
+    $(function () {
+
+      $("button.hamburger").on("click", function () {
+        $(this).toggleClass("is-active");
+      });
+    });
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+        $(".header").addClass("-active");
+        $("ul>li>a, .aboutLatin_block").addClass("-nav_on");
+      } else {
+        $(".header").removeClass("-active");
+        $("ul>li>a, .aboutLatin_block").removeClass("-nav_on");
+      }
+    });
+
+  </script>
+
+</body>
+
+</html>

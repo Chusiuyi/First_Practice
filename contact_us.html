@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>聯絡我們</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <link href="./contact_us.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="parent_block">
+      <a href="./index.html" class="logo_img"><img src="./images/logo.svg"></a>
+      <button class="hamburger hamburger--squeeze" type="button">
+        <span class="hamburger-box"></span>
+        <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      <nav class="nav">
+        <ul class="link_list">
+          <li><a href="./about_us.html">關於我們</a></li>
+          <li><a href="./all_itineraries.html">行程一覽</a></li>
+          <li>
+            <div class="aboutLatin_block">
+              認識拉丁美洲
+              <ul class="aboutLatin_list">
+                <li><a href="./civilization.html">最新文章</a></li>
+                <li><a href="./free_lecture.html">免費講座</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="./contact_us.html">聯絡我們</a></li>
+        </ul>
+      </nav>
+      <div class="nav_icon">
+        <div class="IG">
+          <a href="#" class="IG"><img src="./images/Icon-instagram.svg"></a>
+        </div>
+        <div class="FB">
+          <a href="#" class="IG"><img src="./images/Icon-facebook.svg"></a>
+        </div>
+        <div class="LINE">
+          <a href="#" class="IG"><img src="./images/Icon-line.svg"></a>
+        </div>
+      </div>
+    </div>
+
+  </header>
+  <nav class="hamburger_nav">
+    <ul class="hamburger_link_list">
+      <li><a href="./about_us.html">關於我們</a></li>
+      <li><a href="./all_itineraries.html">行程一覽</a></li>
+      <li><a href="./civilization.html">最新文章</a></li>
+      <li><a href="./free_lecture.html">免費講座</a></li>
+      <li><a href="./contact_us.html">聯絡我們</a></li>
+    </ul>
+  </nav>
+
+
+
+  <div class="contact_us_container">
+    <div class="form_block">
+      <form class="the_form" action="#" method="post">
+        <p>請將你的疑問或需求填寫至以下表格，<br>我們將儘速以EMAIL的方式與你聯繫：</p>
+        <div class="item_block">
+          <label>姓名<br><br></label>
+          <input type="text" placeholder="請輸入姓名">
+        </div>
+
+        <div class="item_block">
+          <label>電子郵件<br><br></label>
+          <input type="text" placeholder="請輸入E-mail">
+        </div>
+
+        <div class="item_block">
+          <label>Line ID<br><br></label>
+          <input type="text" placeholder="請輸入Line ID">
+        </div>
+
+        <div class="item_block">
+          <label>訊息<br><br></label>
+          <textarea class="message"></textarea>
+        </div>
+
+        <div class="item_block">
+          <button type="submit" class="btn_submit">送出</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="line_block">
+      <p class="line_title">加入解鎖拉美LINE＠，獲得更即時的回覆！</p>
+      <div class="Line_QRcode_block">
+        <img src="./images/big-line-icon.svg" alt="">
+        <img src="./images/QRcode-icon.svg" alt="">
+      </div>
+      <p>解鎖拉美官方LINE QR CODE，掃描加入！</p>
+    </div>
+  </div>
+
+  <div class="google_map_container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2405.24252536894!2d121.31353837466472!3d24.98980303088991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1602091267325!5m2!1szh-TW!2stw"
+      width="1000" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+    </iframe>
+    <p></p>
+  </div>
+
+  <footer class="footer">
+    <div class="info_block">
+      <p class="company_name">解鎖拉丁美洲<br><br></p>
+      <p class="address">電話 | 03-330-1234<br>地址｜桃園市桃園區中正路666號<br>信箱｜unlockline@gmail.com</p>
+    </div>
+    <div class="copy">&copy; 2020 Unlock Latin America Travel Taiwan</div>
+  </footer>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("button.hamburger").on("click", function () {
+        $("nav.hamburger_nav").slideToggle();
+      });
+    });
+
+    $(function () {
+      $("button.hamburger").on("click", function () {
+        $(this).toggleClass("is-active");
+      });
+    });
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+        $(".header").addClass("-active");
+        $("ul>li>a, .aboutLatin_block").addClass("-nav_on");
+      } else {
+        $(".header").removeClass("-active");
+        $("ul>li>a, .aboutLatin_block").removeClass("-nav_on");
+      }
+    });
+
+  </script>
+</body>
+
+</html>

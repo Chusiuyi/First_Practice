@@ -1,0 +1,264 @@
+@import "./header.css";
+@import "./footer.css";
+ 
+
+
+div.banner{
+    background-image: url("./images/machupichu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    margin-bottom: 80px;
+  }
+  main.main{
+    width: 100%;
+  }
+  div.main_content{
+    display: flex;
+    justify-content: space-evenly;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  div.main_content div.intro_text{
+    display: inline-block;
+    text-align: center;
+  }
+  div.main_content div.intro_text p.title{
+    font-size: 1.8rem;
+    padding: 10px;
+    color: #717171;
+  }
+  @media screen and (max-width:1199px){
+    div.main_content{
+      width: 800px;
+    }
+  }
+
+  @media screen and (max-width:835px){
+    div.main_content{
+      width: 576px;
+    }
+  
+  }
+  @media screen and (max-width:576px){
+    div.main_content{
+      display: flex;
+      flex-direction: column;
+    }
+    div.main_content div.intro_text p.title{
+      font-size: 1.5rem;
+    }
+  }
+  div.main_content div.intro_text p.title_2{
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #717171;
+  }
+  div.main_content div.intro_text p.content{
+    font-size: 1rem;
+    padding: 10px;
+    line-height: 25px;
+    color: #717171;
+    opacity: 75%;
+  }
+  div.rating_block{
+    display: inline-block;
+    text-align: center;
+  }
+  div.rating_block p.traveller_num{
+    font-size: 2.5rem;
+    color: #1ED7E6;
+    letter-spacing: 5px;
+    padding: 15px;
+  }
+  div.rating_block p.content_2{
+    font-size: 1.2rem;
+    color: #99957A;
+    padding: 10px;
+  }
+  div.rating_block div.ratestar_block{
+    padding: 20px;
+    margin-top: 10px;
+
+  }
+  div.rating_block div.ratestar_block p{
+    display: inline-block;
+    font-size: 1.2rem;
+    color: #717171;
+
+  }
+  div.rating_block div.ratestar_block img{
+    display: inline-block;
+    vertical-align: top;
+  }
+  div.itinerary_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  div.itinerary_container div.img_block{
+    overflow: hidden;
+  }
+  div.itinerary_container img{
+    max-width: 100%;
+    transform:scale(1,1);transition: all 1s ease-out;
+  }
+  div.itinerary_container img:hover{
+    transform: scale(1.1,1.1);
+  }
+
+  div.country_block{
+    margin-bottom: 60px;
+    width: 25%;
+  }
+  @media screen and (max-width: 1199px){
+    div.country_block{
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 576px){
+    div.country_block{
+      width: 100%;
+    }
+  }
+
+  div.itinerary_container div.button a{
+    border: 0;
+    border-radius: 40px;
+    text-align: center;
+    letter-spacing: 6px;
+    padding: 10px 10px 10px 15px;
+    color: white;
+    background-color: #3b4f0d;
+  }
+
+  div.itinerary_container div.button a:hover{
+    color: white;
+    background-color: #969696;
+    transition: 0.6s;
+  }
+
+div.button{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+@media screen and (max-width:767px) {
+  div.button{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div.bt1, .bt2{
+    margin-bottom: 30px;
+  }
+  }
+.country_name{
+  font-size: 2rem;
+  padding-bottom: 30px;
+  color: #214D00;
+}
+ 
+div.slider-container{
+  width: 100%;
+  background-color: rgba(247, 220, 162, 0.309);
+  margin-bottom: 100px;
+}
+
+div.sliderboard {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+div.comment_block{
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+div.comment_block .comment_title{
+  font-size: 2.5rem;
+  color: #067B76;
+  padding: 20px 0px 60px 0px;
+}
+
+@media screen and (max-width:1199px){
+  div.sliderboard {
+    width: 768px;
+  }
+  div.comment_block{
+    width: 768px;
+
+  }
+}
+
+
+@media screen and (max-width:767px){
+  div.sliderboard {
+    width: 576px;
+  }
+  div.comment_block{
+    width: 576px;
+  }
+}
+@media screen and (max-width:575px){
+  div.sliderboard {
+    width: 85%;
+  }
+  div.comment_block{
+    width: 85%;
+
+  }
+  div.comment_block .comment_title{
+    font-size: 2rem;
+  }
+}
+
+div.comment_block .comment_content{
+  font-size: 1.2rem;
+  color: #5F5F5F;
+}
+div.photo_block{
+
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:30px;
+}
+div.traveller_comment{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+div.photo_block .name_1{
+  color: #067B76;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+div.photo_block .profession_1{
+  color: #5F5F5F;
+  font-size: 1rem;
+}
+div.photo_block img{
+  margin-top: 10px;
+  position: relative;
+  bottom: 8px;
+
+}
+
+@media screen and (max-width: 576px){
+
+  div.main_content{
+    width: 100%;
+  }
+  div.itinerary_container{
+    width: 400px;
+  }
+} 
+ 
